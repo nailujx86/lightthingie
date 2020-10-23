@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lightthingie</title>
+    <script src="js/darkmode.js"></script>
+    <link href="css/small-frost.css" type="text/css" rel="stylesheet">
+    <link href="css/darkmode-frost.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="c">
+        <header>
+            <h1>lightthingie</h1>
+            <p>a little something that does something?</p>
+        </header>
+        <div class="r">
+            <div class="i 7">
+                <div class="card">
+                    <div class="c">
+                        <h3>Settings</h3>
+                        <form action="/settings" method="POST">
+                            <label for="brightness">Brightness:</label><br>
+                            <input type="number" min="0" max="1023" name="brightness" value="%DIMVAL%" id="brightness" class="full">
+                            <br><hr>
+                            <label for="animated">Animated</label><input type="checkbox" name="animated" %LIGHTFUN% id="animated">
+                            <br>
+                            <label for="mode">Mode:</label>
+                            <input type="number" min="0" max="1" name="mode" value="%LIGHTMODE%" id="mode" class="full">
+                            <label for="speed">Speed:</label>
+                            <input type="number" min="0" max="25" name="speed" value="%SPEED%" id="speed" class="full">
+                            <hr>
+                            <button type="submit" class="b primary full">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="i 5">
+                <div class="card">
+                    <div class="c">
+                        <h3>Board Info</h3>
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Value</th>
+                            </tr>
+                            <tr>
+                                <td>CPU-Freq</td>
+                                <td>%CPUFREQ%</td>
+                            </tr>
+                            <tr>
+                                <td>Free Heap</td>
+                                <td>%FREEHEAP%</td>
+                            </tr>
+                            <tr>
+                                <td>VCC</td>
+                                <td>%VCC%</td>
+                            </tr>
+                            <tr>
+                                <td>Reset Info</td>
+                                <td>%RESETINFO%</td>
+                            </tr>
+                            <tr>
+                                <td>Reset Reason</td>
+                                <td>%RESETREASON%</td>
+                            </tr>
+                            <tr>
+                                <td>Flash Size</td>
+                                <td>%FLASHSIZE%</td>
+                            </tr>
+                            <tr>
+                                <td>Flash Real Size</td>
+                                <td>%FLASHREALSIZE%</td>
+                            </tr>
+                            <tr>
+                                <td>Free Sketch Space</td>
+                                <td>%FREESKETCHSPACE%</td>
+                            </tr>
+                            <tr>
+                                <td>Sketch Size</td>
+                                <td>%SKETCHSIZE%</td>
+                            </tr>
+                            <tr>
+                                <td>Sketch MD5</td>
+                                <td>%SKETCHMD5%</td>
+                            </tr>
+                            <tr>
+                                <td>FS Total</td>
+                                <td>%FSTOTAL%</td>
+                            </tr>
+                            <tr>
+                                <td>FS Used</td>
+                                <td>%FSUSED%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="full footer">
+        (c) 2020 Julian Blazek. <label for="toggle-theme">Change Theme:</label> <button class="b" id="toggle-theme"
+            onclick="toggleTheme()">🕑</button><br>
+    </footer>
+</body>
+
+</html>
