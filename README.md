@@ -6,7 +6,7 @@ The LED wire consists of 100 LEDs that are connected in parallel without a resis
 Weird and I'm sure not an electrical safe choice definitely.
 Time to build my own controller then!
 
-The strip is split into two wires and is connected to the original controller like that:
+The strip is split into two wires and is connected to the original controller like that:  
 ![Led Connection](/pictures/ledconnection.png)  
 The wire splitting ensures, that half of the strip can be controlled seperate from the other half.  
 Implementing this can be achieved with an H-Bridge.  
@@ -26,5 +26,5 @@ This is how the implementation looked like on a breadboard:
 The implementation has the following features:
 - Alexa integration
 - OTA Updating
-- Weird flickering from time to time
+- Weird flickering from time to time ':D
 - A fading mode
