@@ -33,6 +33,7 @@ void setup()
   Serial.begin(115200);
   Serial.println(F("lightthingie booting.."));
   WiFi.mode(WIFI_STA);
+  WiFi.hostname("Lightthingie");
   WiFi.begin(WIFI_NAME, WIFI_PASS);
   while (WiFi.waitForConnectResult() != WL_CONNECTED)
   {

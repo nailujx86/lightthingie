@@ -1,0 +1,8 @@
+{
+    "name": "lightthingie",
+    "short_name": "lightthingie",
+    "lang": "en",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#2E3440"
+}
